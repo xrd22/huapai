@@ -17,9 +17,14 @@ public class loginController {
         return loginService.login();
     }
 
-    @RequestMapping("/login")
+    @RequestMapping("/index")
     public String login() {
         return "index";
+    }
+
+    @RequestMapping("/chart")
+    public String chart() {
+        return "chart";
     }
 
 }
