@@ -10,14 +10,11 @@ import org.springframework.stereotype.Service;
 public class LoginService {
 
     @Autowired
-     private UserMapper userMapper;
+    private UserMapper userMapper;
 
-    public  String login() {
-
-        User userList = userMapper.selectByPrimaryKey(1003);
-        String userString = JSON.toJSONString(userList);
-
-        return userString;
+    public  User  gitUser() {
+        User user = userMapper.selectByPrimaryKey(1003);
+       return user;
     }
 
 }
